@@ -1,28 +1,96 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Password Protected page</title>
-<script type="text/javascript">
-var s ="";
-
-while (s!= "SoldierSPS")
-{
-s=prompt("please enter your password");
-if (s=="SoldierSPS")
-{
-window.location.href="site1.html"; //page to redirect if password entered is correct
-
-}
-else
-{
-alert("Incorrect password-Try again");
-
-}
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+  <!-- Header -->
+  <header>
+    <h1>Shreya Chaudhary</h1>
+    <img src="Images\Logo.png" alt="Your Logo" class="header-logo">
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#instagram-stats">Instagram Statistics</a></li>
+        <li><a href="#projects">Projects</a></li>
+            </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="Images\About me.jpg" alt="Your Photo" class="about-image">
+      <div class="about-text">
+        <p>Hey there, I’m Shreya Chaudhary, a passionate content creator and storyteller. I specialize in creating engaging and inspiring digital content for brands and individuals. With a creative eye and attention to detail, I bring every project to life.</p>
+        
+        <div class="social-icons">
+          <a href="https://www.instagram.com/that_one_shreya" target="_blank"><img src="Images\insta.png" alt="Instagram"></a>
+          <a href="mailto:shreya22chaudhary@gmail.com" target="_blank"><img src="Images\email.png" alt="Email"></a>
+          <a href=http://linkedin.com/in/shreya-chaudhary-0363771b3 target="_blank"><img src="Images\linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Stats Section -->
+  <section id="instagram-stats">
+    <h2>Instagram Profile Statistics</h2>
+    <div class="stats-container">
+      <div class="stat-box">
+        <h3>Followers</h3>
+        <p>1330</p> <!-- Example follower count, change this to dynamic data if possible -->
+      </div>
+      <div class="stat-box">
+        <h3>Engagement %</h3>
+        <p>14.09%</p> <!-- Example engagement rate -->
+      </div>
+      <div class="stat-box">
+        <h3>Monthly Views</h3>
+        <p>50K</p> <!-- Example likes per post -->
+      </div>
+      <div class="stat-box">
+        <h3>Collaborations</h3>
+        <p>14</p> <!-- Example comments per post -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Work</h2>
+    <div id="projects-container">
+      <div class="project">
+        <h3>Sparkling: Jewelry Brand Collaborations</h3>
+        <img src="Images\Collab 1.PNG" alt="Jewelry collaboration @sense_of_self" class="project-image">
+        <p>Jwellery Collaborations through styling reels for new and upcoming jwellery brands helping them gain traction through elegant styling of their products.</p>
+        
+      </div>
+      <div class="project">
+        <h3>Flavorful Partnerships: Food Outlet Marketing Reels</h3>
+        <img src="Images\Collab 2.PNG" alt="Food Outlet Marketing Reels" class="project-image">
+        <p>Marketing reels for food outlets in Pune, highlighting the key features of their top-selling menu items. High engagement rate and views of content for  both popular and new outlets.</p>
+        
+      </div>
+      <div class="project">
+        <h3>Styling Trends: Clothing Brand Collaborations</h3>
+        <img src="Images\Collab 3.PNG" alt="Clothing collaboration" class="project-image">
+        <p>Collaborations with new and upcoming clothing brands through fun reels which focus on the product.</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 that_one_shreya. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
